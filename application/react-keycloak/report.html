@@ -1,0 +1,341 @@
+
+check-roles:latest (alpine 3.13.5)
+==================================
+Total: 95 (UNKNOWN: 0, LOW: 6, MEDIUM: 28, HIGH: 52, CRITICAL: 9)
+
+┌───────────────────────┬────────────────┬──────────┬───────────────────┬──────────────────┬──────────────────────────────────────────────────────────────┐
+│        Library        │ Vulnerability  │ Severity │ Installed Version │  Fixed Version   │                            Title                             │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ apk-tools             │ CVE-2021-36159 │ CRITICAL │ 2.12.5-r0         │ 2.12.6-r0        │ libfetch before 2021-07-26, as used in apk-tools, xbps, and  │
+│                       │                │          │                   │                  │ other products, mishandles...                                │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-36159                   │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ busybox               │ CVE-2021-42378 │ HIGH     │ 1.32.1-r6         │ 1.32.1-r7        │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42378                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42379 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42379                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42380 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42380                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42381 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42381                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42382 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42382                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42383 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42383                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42384 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42384                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42385 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42385                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42386 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42386                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-28391 │          │                   │ 1.32.1-r8        │ busybox: remote attackers may execute arbitrary code if      │
+│                       │                │          │                   │                  │ netstat is used                                              │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-28391                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-30065 │          │                   │ 1.32.1-r9        │ busybox: A use-after-free in Busybox's awk applet leads to   │
+│                       │                │          │                   │                  │ denial of service...                                         │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-30065                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42374 │ MEDIUM   │                   │ 1.32.1-r7        │ busybox: out-of-bounds read in unlzma applet leads to        │
+│                       │                │          │                   │                  │ information leak and denial...                               │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42374                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42375 │          │                   │                  │ busybox: incorrect handling of a special element in ash      │
+│                       │                │          │                   │                  │ applet leads to...                                           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42375                   │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ curl                  │ CVE-2021-22945 │ CRITICAL │ 7.76.1-r0         │ 7.79.0-r0        │ curl: use-after-free and double-free in MQTT sending         │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22945                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-32207 │          │                   │ 7.79.1-r2        │ curl: Unpreserved file permissions                           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-32207                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22901 │ HIGH     │                   │ 7.77.0-r0        │ curl: Use-after-free in TLS session handling when using      │
+│                       │                │          │                   │                  │ OpenSSL TLS backend                                          │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22901                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22946 │          │                   │ 7.79.0-r0        │ curl: Requirement to use TLS not properly enforced for IMAP, │
+│                       │                │          │                   │                  │ POP3, and...                                                 │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22946                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-22576 │          │                   │ 7.79.1-r1        │ curl: OAUTH2 bearer bypass in connection re-use              │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-22576                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27775 │          │                   │                  │ curl: bad local IPv6 connection reuse                        │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27775                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27781 │          │                   │ 7.79.1-r2        │ curl: CERTINFO never-ending busy-loop                        │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27781                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27782 │          │                   │                  │ curl: TLS and SSH connection too eager reuse                 │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27782                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22922 │ MEDIUM   │                   │ 7.78.0-r0        │ curl: Content not matching hash in Metalink is not being     │
+│                       │                │          │                   │                  │ discarded                                                    │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22922                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22923 │          │                   │                  │ curl: Metalink download sends credentials                    │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22923                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22925 │          │                   │                  │ curl: Incorrect fix for CVE-2021-22898 TELNET stack contents │
+│                       │                │          │                   │                  │ disclosure                                                   │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22925                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22947 │          │                   │ 7.79.0-r0        │ curl: Server responses received before STARTTLS processed    │
+│                       │                │          │                   │                  │ after TLS handshake                                          │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22947                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27774 │          │                   │ 7.79.1-r1        │ curl: credential leak on redirect                            │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27774                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27776 │          │                   │                  │ curl: auth/cookie leak on redirect                           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27776                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-32205 │          │                   │ 7.79.1-r2        │ curl: Set-Cookie denial of service                           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-32205                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-32206 │          │                   │                  │ curl: HTTP compression denial of service                     │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-32206                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-32208 │          │                   │                  │ curl: FTP-KRB bad message verification                       │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-32208                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22898 │ LOW      │                   │ 7.77.0-r0        │ curl: TELNET stack contents disclosure                       │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22898                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22924 │          │                   │ 7.78.0-r0        │ curl: Bad connection reuse due to flawed path name checks    │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22924                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-35252 │          │                   │ 7.79.1-r3        │ curl: control code in cookie denial of service               │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-35252                   │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ freetype              │ CVE-2022-27404 │ CRITICAL │ 2.10.4-r1         │ 2.10.4-r2        │ FreeType: Buffer overflow in sfnt_init_face                  │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27404                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27405 │ HIGH     │                   │ 2.10.4-r3        │ FreeType: Segmentation violation via FNT_Size_Request        │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27405                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27406 │          │                   │                  │ Freetype: Segmentation violation via FT_Request_Size         │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27406                   │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ libcrypto1.1          │ CVE-2021-3711  │ CRITICAL │ 1.1.1k-r0         │ 1.1.1l-r0        │ openssl: SM2 Decryption Buffer Overflow                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-3711                    │
+│                       ├────────────────┼──────────┤                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-3712  │ HIGH     │                   │                  │ openssl: Read buffer overruns processing ASN.1 strings       │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-3712                    │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-0778  │          │                   │ 1.1.1n-r0        │ openssl: Infinite loop in BN_mod_sqrt() reachable when       │
+│                       │                │          │                   │                  │ parsing certificates                                         │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-0778                    │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-2097  │ MEDIUM   │                   │ 1.1.1q-r0        │ openssl: AES OCB fails to encrypt some bytes                 │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-2097                    │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ libcurl               │ CVE-2021-22945 │ CRITICAL │ 7.76.1-r0         │ 7.79.0-r0        │ curl: use-after-free and double-free in MQTT sending         │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22945                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-32207 │          │                   │ 7.79.1-r2        │ curl: Unpreserved file permissions                           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-32207                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22901 │ HIGH     │                   │ 7.77.0-r0        │ curl: Use-after-free in TLS session handling when using      │
+│                       │                │          │                   │                  │ OpenSSL TLS backend                                          │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22901                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22946 │          │                   │ 7.79.0-r0        │ curl: Requirement to use TLS not properly enforced for IMAP, │
+│                       │                │          │                   │                  │ POP3, and...                                                 │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22946                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-22576 │          │                   │ 7.79.1-r1        │ curl: OAUTH2 bearer bypass in connection re-use              │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-22576                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27775 │          │                   │                  │ curl: bad local IPv6 connection reuse                        │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27775                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27781 │          │                   │ 7.79.1-r2        │ curl: CERTINFO never-ending busy-loop                        │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27781                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27782 │          │                   │                  │ curl: TLS and SSH connection too eager reuse                 │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27782                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22922 │ MEDIUM   │                   │ 7.78.0-r0        │ curl: Content not matching hash in Metalink is not being     │
+│                       │                │          │                   │                  │ discarded                                                    │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22922                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22923 │          │                   │                  │ curl: Metalink download sends credentials                    │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22923                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22925 │          │                   │                  │ curl: Incorrect fix for CVE-2021-22898 TELNET stack contents │
+│                       │                │          │                   │                  │ disclosure                                                   │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22925                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22947 │          │                   │ 7.79.0-r0        │ curl: Server responses received before STARTTLS processed    │
+│                       │                │          │                   │                  │ after TLS handshake                                          │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22947                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27774 │          │                   │ 7.79.1-r1        │ curl: credential leak on redirect                            │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27774                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-27776 │          │                   │                  │ curl: auth/cookie leak on redirect                           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-27776                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-32205 │          │                   │ 7.79.1-r2        │ curl: Set-Cookie denial of service                           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-32205                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-32206 │          │                   │                  │ curl: HTTP compression denial of service                     │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-32206                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-32208 │          │                   │                  │ curl: FTP-KRB bad message verification                       │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-32208                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22898 │ LOW      │                   │ 7.77.0-r0        │ curl: TELNET stack contents disclosure                       │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22898                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-22924 │          │                   │ 7.78.0-r0        │ curl: Bad connection reuse due to flawed path name checks    │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-22924                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-35252 │          │                   │ 7.79.1-r3        │ curl: control code in cookie denial of service               │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-35252                   │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcrypt             │ CVE-2021-33560 │ HIGH     │ 1.8.7-r0          │ 1.8.8-r0         │ libgcrypt: mishandles ElGamal encryption because it lacks    │
+│                       │                │          │                   │                  │ exponent blinding to address a...                            │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-33560                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-40528 │ MEDIUM   │                   │ 1.8.8-r1         │ libgcrypt: ElGamal implementation allows plaintext recovery  │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-40528                   │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ libssl1.1             │ CVE-2021-3711  │ CRITICAL │ 1.1.1k-r0         │ 1.1.1l-r0        │ openssl: SM2 Decryption Buffer Overflow                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-3711                    │
+│                       ├────────────────┼──────────┤                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-3712  │ HIGH     │                   │                  │ openssl: Read buffer overruns processing ASN.1 strings       │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-3712                    │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-0778  │          │                   │ 1.1.1n-r0        │ openssl: Infinite loop in BN_mod_sqrt() reachable when       │
+│                       │                │          │                   │                  │ parsing certificates                                         │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-0778                    │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-2097  │ MEDIUM   │                   │ 1.1.1q-r0        │ openssl: AES OCB fails to encrypt some bytes                 │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-2097                    │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ libxml2               │ CVE-2021-3517  │ HIGH     │ 2.9.10-r6         │ 2.9.10-r7        │ libxml2: Heap-based buffer overflow in                       │
+│                       │                │          │                   │                  │ xmlEncodeEntitiesInternal() in entities.c                    │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-3517                    │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-3518  │          │                   │                  │ libxml2: Use-after-free in xmlXIncludeDoProcess() in         │
+│                       │                │          │                   │                  │ xinclude.c                                                   │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-3518                    │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-2309  │          │                   │ 2.9.14-r1        │ lxml: NULL Pointer Dereference in lxml                       │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-2309                    │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-23308 │          │                   │ 2.9.13-r0        │ libxml2: Use-after-free of ID and IDREF attributes           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-23308                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-40303 │          │                   │ 2.9.14-r2        │ libxml2: integer overflows with XML_PARSE_HUGE               │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-40303                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-40304 │          │                   │                  │ libxml2: dict corruption caused by entity reference cycles   │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-40304                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-3537  │ MEDIUM   │                   │ 2.9.10-r7        │ libxml2: NULL pointer dereference when post-validating mixed │
+│                       │                │          │                   │                  │ content parsed in recovery mode...                           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-3537                    │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-3541  │          │                   │ 2.9.11-r0        │ libxml2: Exponential entity expansion attack bypasses all    │
+│                       │                │          │                   │                  │ existing protection mechanisms                               │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-3541                    │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-29824 │          │                   │ 2.9.14-r0        │ libxml2: integer overflows in xmlBuf and xmlBuffer lead to   │
+│                       │                │          │                   │                  │ out-of-bounds write                                          │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-29824                   │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ libxslt               │ CVE-2021-30560 │ HIGH     │ 1.1.34-r0         │ 1.1.35-r0        │ Use after free in Blink XSLT in Google Chrome prior to       │
+│                       │                │          │                   │                  │ 91.0.4472.164...                                             │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-30560                   │
+├───────────────────────┼────────────────┤          ├───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ ncurses-libs          │ CVE-2022-29458 │          │ 6.2_p20210109-r0  │ 6.2_p20210109-r1 │ ncurses: segfaulting OOB read                                │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
+├───────────────────────┤                │          │                   │                  │                                                              │
+│ ncurses-terminfo-base │                │          │                   │                  │                                                              │
+│                       │                │          │                   │                  │                                                              │
+├───────────────────────┼────────────────┤          ├───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ ssl_client            │ CVE-2021-42378 │          │ 1.32.1-r6         │ 1.32.1-r7        │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42378                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42379 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42379                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42380 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42380                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42381 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42381                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42382 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42382                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42383 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42383                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42384 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42384                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42385 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42385                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42386 │          │                   │                  │ busybox: use-after-free in awk applet leads to denial of     │
+│                       │                │          │                   │                  │ service and possibly...                                      │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42386                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-28391 │          │                   │ 1.32.1-r8        │ busybox: remote attackers may execute arbitrary code if      │
+│                       │                │          │                   │                  │ netstat is used                                              │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-28391                   │
+│                       ├────────────────┤          │                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2022-30065 │          │                   │ 1.32.1-r9        │ busybox: A use-after-free in Busybox's awk applet leads to   │
+│                       │                │          │                   │                  │ denial of service...                                         │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-30065                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42374 │ MEDIUM   │                   │ 1.32.1-r7        │ busybox: out-of-bounds read in unlzma applet leads to        │
+│                       │                │          │                   │                  │ information leak and denial...                               │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42374                   │
+│                       ├────────────────┤          │                   │                  ├──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2021-42375 │          │                   │                  │ busybox: incorrect handling of a special element in ash      │
+│                       │                │          │                   │                  │ applet leads to...                                           │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2021-42375                   │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ xz-libs               │ CVE-2022-1271  │ HIGH     │ 5.2.5-r0          │ 5.2.5-r1         │ gzip: arbitrary-file-write vulnerability                     │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-1271                    │
+├───────────────────────┼────────────────┼──────────┼───────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ zlib                  │ CVE-2022-37434 │ CRITICAL │ 1.2.11-r3         │ 1.2.12-r2        │ zlib: heap-based buffer over-read and overflow in inflate()  │
+│                       │                │          │                   │                  │ in inflate.c via a...                                        │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2022-37434                   │
+│                       ├────────────────┼──────────┤                   ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                       │ CVE-2018-25032 │ HIGH     │                   │ 1.2.12-r0        │ zlib: A flaw found in zlib when compressing (not             │
+│                       │                │          │                   │                  │ decompressing) certain inputs...                             │
+│                       │                │          │                   │                  │ https://avd.aquasec.com/nvd/cve-2018-25032                   │
+└───────────────────────┴────────────────┴──────────┴───────────────────┴──────────────────┴──────────────────────────────────────────────────────────────┘

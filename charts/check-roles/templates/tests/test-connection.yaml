@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "check-roles.fullname" . }}-test-connection"
+  labels:
+    {{- include "check-roles.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "check-roles.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
